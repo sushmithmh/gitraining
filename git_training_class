@@ -1,0 +1,793 @@
+Day 1 Command Line History
+git --version
+git config --list --global
+git config --global user.name "Daffy Duck"
+git config --global user.email
+git config --global user.email daffy@disney.com
+cat ~/.gitconfig
+vi ~/.gitconfig
+cat .gitignore
+cat ~/.gitignore
+cat ~/.gitconfig
+git config --global core.autocrlf  input
+git config --global color.ui true
+git config --global push.default simple
+git config --global pull.rebase true
+git config --global rerere.enabled true
+git config --global --list
+cat ~/.gitconfig
+git status
+git init intelweb1
+cd intelweb1
+git status
+vi index.html
+git status
+git add .
+git commit -m "Added home page"
+open .git
+cat .git/config
+cat .git/info/exclude
+ls
+git cat-file -p 3b18
+git cat-file -p 3b1
+git rev-parse 3b1
+git rev-parse 3b18
+git cat-file -p 3b1
+git cat-file -p 3b18
+git cat-file -p c5e6
+git cat-file -p ff46
+git cat-file -p c5e6
+git log
+vi index.css
+git add .
+git commit -m "Styled home page"
+git cat-file -p 9a24
+git cat-file -p a2da
+clear
+git status
+touch index.js
+git status
+git status -s
+git config --global alias.s "status -s"
+git s
+git log
+git config --global alias.lg "log --oneline --decorate --all --graph"
+git log 
+git log --oneline
+git log --oneline --decorate
+git log --oneline --decorate --all
+git checkout c5e6e9f
+git log --oneline --decorate 
+git log --oneline --decorate --all
+git checkout master
+git log --oneline --decorate --all --graph
+git lg
+git branch
+git checkout -b about_us
+touch about.html
+git add .
+git commit -m "Added about us page"
+touch about.css
+git add .
+git commit -m "Styled about us page"
+history
+git lg
+git checkout master
+git merge about_us
+git lg
+git reset --keep master@{1}
+git lg
+git branch
+git merge --no-ff about_us 
+git lg
+git branch -d about_us
+git lg
+git checkout -b contact_us
+touch contact.html
+git add .
+git commit -m "Added contact us page"
+touch contact.css
+git add .
+git commit -m "Styled contact us page"
+git lg
+git checkout master
+git checkout -b search
+touch search.html
+git add .
+git commit -m "Added search page"
+touch search.css
+git add .
+git commit -m "Styled search page"
+history
+git lg
+history
+git lg
+cat ~/.gitconfig
+git lg
+git checkout master
+git merge --no-ff contact_us
+git lg
+git branch -d contact_us
+git lg
+git merge search
+git lg
+git reset --hard HEAD~1
+git lg
+git merge search
+git lg
+git branch -d search
+git lg
+git checkout 60201f3
+git checkout -b search
+git lg
+git checkout master
+git reset --hard HEAD~1
+git lg
+giut checkout search
+git checkout search
+git rebase master
+git lg
+git checkout master
+git merge --no-ff search
+git lg
+git branch -d search 
+git lg
+cd ..
+mkdir intelcollab
+cd intelcollab
+touch index.html
+git init
+git add .
+git commit -m "Added home page"
+git s
+git remote add origin https://github.com/githubteacher/intelcollab.git
+git push -u origin master
+cd ..
+mkdir student
+cd student
+git status
+git clone https://github.com/githubteacher/intelcollab.git
+cd intelcollab
+git branch
+git lg
+touch peterbell.txt
+git add .
+git commit -m "Whatever"
+git lg
+git reset --hard HEAD~1
+git lg
+git status
+git checkout -b peterbell
+vi peterbell.txt
+git add .
+git commit -m "Added peter bell to the project"
+git lg
+cat .git/config
+git checkout master
+git pull
+git checkout peterbell
+git push -u origin master
+git push -u origin peterbell
+git fetch
+git branch
+git branch -a
+git fetch
+git branch -a
+git fetch
+git branch -a
+git checkout raj-branch
+git branch
+ls
+touch raj2.txt
+git add .
+git commit -m "Added a file to raj's branch"
+git push
+git checkout master
+git checkout -b peter2
+touch peter2.txt
+git add 
+git commit -m "Peter2"
+git add .
+git commit -m "Peter2"
+git lg
+git checkout master
+git branch
+git checkout peter2
+git push -u origin peter2
+touch nawood.txt
+git add .
+git commit -m "Added conflicting file"
+git push
+git fetch
+git checkout master
+git merge peter2
+git push
+git pull
+git status
+git push
+cd ..
+git status
+git init web2
+cd web2
+touch index.html
+git add .
+git commit -m "Added home page"
+git lg
+history
+cat .git/config
+git remote add origin https://github.com/githubteacher/web2.git
+cat .git/config
+git branch 
+git branch -a
+git push -u origin master
+cat .git/config
+git pull
+git branch 
+git branch -a
+git lg
+git fetch
+git lg
+git merge origin/master
+ls
+git lg
+git reset --keep master@{1}
+git lg
+git rebase origin/master
+git lg
+git fetch
+git lg
+touch localfile.txt
+git add .
+git commit -m "Added local file"
+git lg
+git merge origin/master
+git lg
+git reset --hard HEAD~1
+git lg
+git rebase origin/master
+git lg
+git push
+git lg
+cd ..
+git init web3
+cd web3
+touch index.html
+git add .
+git commit -m "Added home page"
+touch index.css
+git add .
+git commit -m "Styled home page"
+history
+git lg
+touch badfile.txt
+git add .
+git commit -m "Added bad file"
+git s
+git lg
+git revert e5f6ca2
+git lg
+git s
+lg
+ls
+touch search.html
+git add .
+git commit -m "Added search pagejsbdg"
+git lg
+git commit --amend
+git s
+git lg
+touch cart.htm;
+rm cart.htm
+touch cart.html
+vi index.html
+git s
+git commit -am "Added shopping cart"
+git s
+git add .
+git status
+git commit --amend
+git s
+git lg
+ls
+touch products.html products.css categories.html categories.css
+git s
+git add *.html
+git commit -m "Added new markup for pages"
+git add .
+git commit -m "STyled new pages"
+git commit --amend
+git lg
+git reset  HEAD~2
+git lg
+git s
+git add pr*
+git s
+git commit -m "Added products page"
+git add .
+git commit -m "Added categories page"
+git lg
+git reset --soft HEAD~2
+git s
+git commit -m "Added products and categories pages"
+git lg
+git reset --hard HEAD~1
+ls
+git s
+git lg
+git reflog
+git reset --hard f4f64a3
+ls
+git lg
+git reflog
+git reset --hard de2aa08
+ls
+git lg
+touch new_commit.txt
+git add .
+git commit -m "Added new commit"
+git lg
+git reflog
+git checkout f4f64a3
+git checkout -b temp
+git lg
+git rebase master
+git lg
+git checkout master
+git merge --no-ff temp
+git branch -d temp
+git lg
+Day 2 Command Line History
+git --version
+git status
+git init web1
+cd web1
+touch index.html
+git add .
+git commit -m "Added home page"
+touch index.css
+git add .
+git commit -m "Styled home page"
+git s
+git lg
+cat ~/.gitconfig
+clear
+git lg
+git branch about_us
+git branch
+git checkout about_us
+touch about.html
+git add .
+git commit -m "Added about us page"
+vi index.html
+git s
+git commit -am "Added home page link to about us page"
+git lg
+git checkout master
+git checkout -b contact_us
+touch contatc.html
+rm contatc.html
+touch contact.html
+git add .
+git commit -m "Added contact us page"
+vi index.html
+git commit -am "Added contact us link to home page"
+git lg
+git checkout master
+git merge --no-ff about_us
+git branch -d about_us
+git lg
+git merge contact_us
+git status
+vi index.html
+git status
+git add index.html
+git status
+git commit
+git lg
+git branch -d contact_us
+git lg
+git checkout 
+git lg
+git checkout  8a10c8e
+git lg
+git checkout -b contact_us
+git lg
+git checkout master
+git reset --hard HEAD~1
+git lg
+git checkout contact_us
+git rebase master
+git lg
+git status
+cat index.html
+git add .
+git lg
+git rebase --continue
+git lg
+git checkout master
+git merge --no-ff contact_us
+git branch -d contact_us
+git lg
+git checkout -b search
+touch search.html
+git add .
+git commit -m "Added search page"
+vi index.html
+git commit -am "Added search link to home page"
+git checkout master
+git checkout -b home_page_redesign
+vi index.html
+git commit -am "Redesigned home page"
+git lg
+git checkout master
+git merge --no-ff home_page_redesign
+git branch -d home_page_redesign
+git lg
+git checkout search
+git lg
+git rebase master
+vi index.html
+git add .
+git lg
+git rebase --abort
+git lg
+git rebase master
+git lg
+git rebase --abort
+git lg
+git rebase master
+git status
+cat index.html
+vi index.html
+git add .
+git s
+git lg
+git status
+git commit 
+git lg
+git status
+git commit -m "Shouldn'rt really commit this"
+git lg
+git reflog
+git reset --hard f8a7082
+git status
+git reflog
+git reset --hard ddc8bee
+git reset --soft f8a7082
+git s
+cat index.html
+git status
+git rebase --continue
+git lg
+git branch
+git checkout master
+git merge --no-ff search
+git branch -d search
+git branch
+git status
+git lg
+git status
+git submodule add -b master https://github.com/githubteacher/submod.git
+ls submod
+git s
+cat .gitmodules
+git diff --staged
+git commit -m "Added submod for css"
+ls submod
+cat submod/index.html
+cd ..
+git status
+git clone https://github.com/githubteacher/submod.git
+cd submod
+vi submodule.html
+git commit -am "Added Peter to this repo"
+git push
+cd ..
+cd web1
+ls
+ls submod
+cat submod/submodule.html
+git submodule update --remote
+git status
+git add .
+git s
+git diff --staged
+git reset --hard
+git status
+git add .
+git diff --staged
+git commit -m "Updated submod to get latest blah"
+cd ..
+cd submod
+git status
+git pull
+touch newfile.txt
+git add .
+git commit -m "Added a new file"
+git push
+cd ..
+cd web1
+git lg
+ls
+git submodule --update
+git submodule update --remote
+ls submod
+git s
+vi index.html
+git s
+git reset --hard
+git s
+git lg
+cd submod
+git lg
+git s
+vi submodule.html
+git s
+git reset --hard
+git s
+cd ..
+git s
+git add .
+git diff --staged
+cd submod
+git lg
+git checkout 34adbf5
+cd ..
+git s
+git add .
+git s
+git submodule update
+git submodule update --remote
+git s
+git add .
+git commit -m "Updated submoduel to get latest changes"
+git s
+git checkout -b feature1
+vi .gitmodules
+cd ..
+cd submod
+git s
+git pull
+git checkout -b feature1
+touch feature1.html
+git add .
+git commit -m "Added a feature 1 specific file"
+git push -u origin feature1
+cd ..
+cd web1
+git s
+git diff
+git submodule update --remote
+git s
+git diff
+git add .
+git commit -m "Pointed to feature1 branch on submod submodule"
+ls submod
+git checkout master
+git diff
+git submodule update
+git s
+git checkout -b feature2
+touch feature2.html
+git add .
+git commit -m "Added feature 2"
+git lg
+git checkout master
+git merge --no-ff feature2
+git branch -d feature2
+git lg
+git checkout feature2
+git checkout feature1
+git submodule update
+git s
+git rebase master
+git lg
+cd ..
+cd submod
+git lg
+git checkout master
+git checkout -b feature2
+touch f2.html
+git add .
+git commit -m "Added f2"
+git checkout master
+git merge feature2
+git lg
+git push
+git lg
+git checkout feature1
+git rebase master
+git lg
+git push
+git push -f
+git lg
+cd ..
+cd web1
+cat submod
+cd submod
+git lg
+git fetch
+git lg
+git checkout e1d8fbc
+cd ..
+git s
+git diff
+git commit -m "Updated submod to point to new SHA1 for same commit after rebase of feature1 in the submod project"
+git add .
+git commit -m "Updated submod to point to new SHA1 for same commit after rebase of feature1 in the submod project"
+cd submod
+git pull
+git checkout feature1
+git lg
+git checkout master
+git pull
+git lg
+git checkout feature1
+f1_new.txt
+touch f1_new.txt
+git add .
+git commit -m "Added another new file to feature 1"
+cd ..
+git s
+git add .
+git s
+git diff --staged
+git commit -m "Committing another update in the submod submodle"
+cd submod
+git lg
+git push
+cd ..
+fgit status
+git status
+git clone https://github.com/githubteacher/example-groovy
+cd example-groovy
+git lg
+git log --grep='maven'
+git log --grep='maven' --oneline
+git lg --grep='maven' 
+ls
+cd src
+ls
+cat Division.groovy
+git grep val2
+git config --global alias.g "grep --break --heading --linenumbers"
+git g val2
+vi ~/.gitconfig
+git g val2
+cd ..
+git g val2
+git grep val2
+git grep -R val2
+git lg
+git checkout -b newfeature
+touch new1.txt
+git add .
+git commit -m "New 1"
+touch new2.txt
+git add .
+git commit -m "New 2"
+git checkout master
+git checkout -b newfeature2
+touch new3.txt
+git add .
+git commit -m "New 3"
+git lg
+git merge-base newfeature newfeature2
+git lg
+git merge-base newfeature 5ed842e
+git lg
+git rev-pase newfeature
+git rev-parse newfeature
+git rev-parse a195853
+git merge-base a195853 5ed8
+git lg
+git merge-base master 818f033
+git merge-base --is-ancestor newfeature 5ed8
+git merge-base --is-ancestor 5ed8 newfeature
+git branch newfeature --contains 5ed8
+git lg
+git branch newfeature --contains 29a7
+git help
+git help -g
+git help ignore
+git help reset
+git help reset -w
+git lg
+git checkout master
+git merge --no-ff newfeature
+git branch -d newfeature
+git lg
+git checkout newfeature2
+git rebase master
+git checkout master 
+git merge --no-ff newfeature2
+git branch -d newfeature2
+git lg
+git checkout 3a2c381
+git tag v2.7
+git 
+git lg
+git checkout master
+git lg
+git checkout v2.7
+git lg
+git checkout cc1a996
+git tag -a v2.8 -m "This is v2.8"
+git lg
+git show v2.7
+git lg
+git show v2.8
+git lg
+git checkout master
+git tag -a v2.9 -m "Somethign abotu v2.9"
+git lg
+touch another.html
+git add .
+git commit -m "Something we don't want in 2.9"
+git lg
+git checkout v2.9
+git lg
+touch hotfix.html
+git s
+git checkout -b rb2.9
+git lg
+git add .
+git commit -m "Added hotfix for SQL injection on v2.9"
+git lg
+git tag -a v2.9.1 -m "SQL injection hotfix patch"
+git lg
+git checkout master
+git merge rb2.9
+git branch -d rb2.9
+git lg
+git checkout v2.7
+git checkout -b rb2.7
+git checkout v2.8
+git checkout -b rb2.8
+git lg
+touch buffer_fix.txt
+git add .
+git s
+git stash
+git status
+git stash apply
+git commit -m "Fixed buffer overfow on master"
+git checkout rb2.7
+git stash apply
+git commit -m "Fixed buffer overflow in 2.7"
+git checkout rb2.8
+git stash pop
+git s
+git lg
+ls
+vi buffer_fix.txt
+git add .
+git commit -m "Custom buffer fix for this branch"
+git lg
+git checkout master
+git lg
+git cheryy-pick 2b94940
+git cherry-pick 2b94940
+git lg
+git checkout rb2.8
+git log --oneline
+git log --oneline --decorate
+git reset --soft HEAD~2
+git s
+git diff --staged
+git commit -m "Fixed buffer overflow for this branch"
+git lg
+touch latest_file.txt
+vi latest_file.txt
+git add .
+git commit -m "Latest file"
+git lg
+git checkout master
+git cherry-pick ed6086e -n
+git lg
+git s
+git diff
+git diff --staged
+vi latest_file.txt
+git add .
+git commit -m "Changed file on master"
